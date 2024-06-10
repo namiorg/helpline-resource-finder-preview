@@ -1,0 +1,54 @@
+/*
+Theme Name: NAMI Resource Directory
+Author: NAMI Information Systems
+Author URI: https://nami.org/
+Description: A basic theme for the NAMI Resource Directory.
+Version: 1.0
+*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.facetwp-facet {
+    @apply mb-0 !important;
+}
+
+.facetwp-checkbox {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+nav.pagination {
+    @apply text-sm;
+    @apply border-t mt-8 pt-4;
+}
+
+nav.pagination .nav-links {
+    @apply flex justify-between;
+}
+
+nav.pagination .nav-links .page-numbers.prev {
+    @apply flex-auto;
+    @apply text-left;
+    @apply pl-0 pr-2;
+}
+
+nav.pagination .nav-links .page-numbers.next {
+    @apply flex-auto;
+    @apply text-right;
+    @apply pl-2 pr-0;
+}
+
+nav.pagination .nav-links .page-numbers {
+    @apply px-4 py-2;
+    @apply text-center;
+}
+
+nav.pagination .nav-links .page-numbers.current {
+    @apply border-b-2 border-b-green-600;
+}
+
+.screen-reader-text {
+    @apply sr-only;
+}
